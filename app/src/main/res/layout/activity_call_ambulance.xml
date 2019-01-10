@@ -6,4 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".CallAmbulance">
 
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+
+            android:src="@drawable/contactus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="300dp"
+            android:gravity="center"
+            android:text=" 24 HOURS EMERGENCY NUMBER"
+            android:textSize="100dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="189dp"
+
+            android:layout_marginEnd="-45dp"
+            android:src="@drawable/ic_call_ambulance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="321dp"
+            android:autoLink="phone"
+            android:text="102"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginBottom="-247dp"
+            android:gravity="center"
+
+
+            android:text="E-MAIL US"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+
+            android:gravity="center"
+            android:text="VISIT OUR WEBSITE"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-45dp"
+            android:layout_marginBottom="52dp"
+            android:autoLink="all"
+
+            android:paddingLeft="80dp"
+            android:text="www.healthservices.com"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="410dp"
+            android:src="@drawable/images" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="270dp"
+            android:src="@drawable/images" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="275dp"
+            android:autoLink="all"
+            android:text="hfwminister@gov.in"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

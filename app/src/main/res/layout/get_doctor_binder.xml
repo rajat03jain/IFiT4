@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
     android:orientation="vertical">
 
@@ -18,12 +18,18 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/doctor_image"
                 android:src="@drawable/ic_launcher_background" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -33,6 +39,20 @@
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dr Paras"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:id="@+id/doctorname"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -41,6 +61,20 @@
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="General Physician"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:id="@+id/doctor_speciality"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,31 +83,65 @@
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MBBS/ MS"
+                        android:id="@+id/doctordegree"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ratings:"
                         android:textSize="18dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_star_black_24dp"/>
+                        android:src="@drawable/ic_star_black_24dp" />
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_star_black_24dp"/>
+                        android:src="@drawable/ic_star_black_24dp" />
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_star_black_24dp"/>
+                        android:src="@drawable/ic_star_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Schedule Time:"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:id="@+id/doctorscheduletime"
+                        android:text="11 a.m.- 2 p.m."/>
+
                 </LinearLayout>
 
 

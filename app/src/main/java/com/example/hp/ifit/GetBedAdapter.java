@@ -1,6 +1,7 @@
 package com.example.hp.ifit;
 
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,12 +10,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class GetBedAdapter extends RecyclerView.Adapter<GetBedAdapter.ViewHolder> {
 
     private ArrayList<GetBedDao> beddao;
+    private Context context;
 
     public GetBedAdapter(ArrayList<GetBedDao> getBedDao){
         this.beddao= getBedDao;
@@ -40,6 +43,12 @@ public class GetBedAdapter extends RecyclerView.Adapter<GetBedAdapter.ViewHolder
        /* viewHolder.cat.setText(beddao.get(i).getAbout());
         viewHolder.bedimage.setImageResource(beddao.get(i).getImage());
         viewHolder.price.setText(String.valueOf(beddao.get(i).getPrice()));*/
+        viewHolder.callambulance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "The Ambulance will arrive soon", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
