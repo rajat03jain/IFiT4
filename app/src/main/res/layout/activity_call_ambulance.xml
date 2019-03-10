@@ -8,6 +8,7 @@
 
     <LinearLayout
         android:layout_width="393dp"
+        android:orientation="vertical"
         android:layout_height="match_parent">
 
 
@@ -16,48 +17,65 @@
             android:layout_height="110dp"
 
             android:src="@drawable/contactus" />
-
-        <TextView
+        <LinearLayout
+            android:layout_weight="4"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
 
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="33dp"
-            android:layout_marginTop="300dp"
-            android:gravity="center"
-            android:text=" 24 HOURS EMERGENCY NUMBER"
-            android:textSize="100dp" />
+            <LinearLayout
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="189dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            android:layout_marginEnd="-45dp"
-            android:src="@drawable/ic_call_ambulance" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginBottom="321dp"
-            android:autoLink="phone"
-            android:text="102"
-            android:textSize="25dp" />
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
-            android:layout_marginBottom="-247dp"
-            android:gravity="center"
+                    android:text=" 24 HOURS EMERGENCY NUMBER"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+
+                        android:layout_marginEnd="-45dp"
+                        android:src="@drawable/ic_call_ambulance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginBottom="56dp"
+                        android:autoLink="phone"
+                        android:text="102"
+                        android:textSize="25dp" />
+                </LinearLayout>
+            </LinearLayout>
 
 
-            android:text="E-MAIL US"
-            android:textSize="25dp" />
+
+
 
         <TextView
             android:layout_width="match_parent"
@@ -73,12 +91,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="-45dp"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="700dp"
             android:autoLink="all"
 
             android:paddingLeft="80dp"
             android:text="www.healthservices.com"
-            android:textSize="25dp"
+            android:textSize="30dp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="206dp" />
 
@@ -103,12 +121,14 @@
 
 
             android:layout_marginStart="51dp"
-            android:layout_marginTop="275dp"
+            android:layout_marginTop="100dp"
             android:autoLink="all"
             android:text="hfwminister@gov.in"
             android:textSize="25dp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="304dp" />
+        </LinearLayout>
+
 
 
     </LinearLayout>

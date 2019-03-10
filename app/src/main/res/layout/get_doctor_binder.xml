@@ -79,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Degree:"
+                    android:text="Contact No.:"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 

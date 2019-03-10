@@ -37,7 +37,7 @@ public class GetBed extends AppCompatActivity {
 
 
 
-        GetBedAdapter adapter = new GetBedAdapter( beddaolist);
+        GetBedAdapter adapter = new GetBedAdapter(this, beddaolist);
         recyclerView.setAdapter(adapter);
     }
 }

@@ -19,7 +19,8 @@ public class GetBedAdapter extends RecyclerView.Adapter<GetBedAdapter.ViewHolder
     private ArrayList<GetBedDao> beddao;
     private Context context;
 
-    public GetBedAdapter(ArrayList<GetBedDao> getBedDao){
+    public GetBedAdapter(Context context,ArrayList<GetBedDao> getBedDao){
+        this.context= context;
         this.beddao= getBedDao;
     }
 
@@ -47,6 +48,12 @@ public class GetBedAdapter extends RecyclerView.Adapter<GetBedAdapter.ViewHolder
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "The Ambulance will arrive soon", Toast.LENGTH_SHORT).show();
+            }
+        });
+        viewHolder.getroom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "No Rooms Avaialble currently!", Toast.LENGTH_SHORT).show();
             }
         });
 
